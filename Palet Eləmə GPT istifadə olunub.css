@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -7,145 +7,127 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f2f2f2;
+    font-family: 'Inter', sans-serif;
+    background-color: #eaeef3;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1000px;
-    margin: 30px auto;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1050px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .sidebar {
     flex: 1;
-    min-width: 300px;
-    background-color: #005aad;
-    color: white;
-    padding: 20px;
-    border-radius: 15px 0 0 15px;
+    min-width: 290px;
+    background-color: #014276;
+    color: #fff;
+    padding: 25px;
+    border-radius: 12px 0 0 12px;
 }
 
 .main-content {
     flex: 2;
-    padding: 30px;
-}
-
-.highlight {
-    color: #005aad;
+    padding: 35px;
+    position: relative;
 }
 
 .title-line {
-    margin: 10px 0 30px 0;
+    margin: 15px 0 40px 0;
     height: 3px;
-    background-color: #005aad;
+    background-color: #014276;
     border: none;
-    width: 100px;
-    margin-bottom: 50px;
+    width: 90px;
 }
 
 .accordion-item {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .accordion-btn {
     width: 100%;
-    padding: 12px 15px;
-    background-color: #004381;
-    color: white;
+    padding: 13px 18px;
+    background-color: #033a63;
+    color: #fff;
     text-align: left;
     border: none;
-    outline: none;
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s;
-    border-radius: 8px;
-
+    border-radius: 7px;
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-
-.btn-icon {
-    width: 18px;
-    height: 18px;
-    vertical-align: middle;
+    gap: 12px;
+    transition: background-color 0.25s ease;
 }
 
 .accordion-btn:hover {
-    background-color: #1671c7;
+    background-color: #125c9b;
+}
+
+.btn-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
 }
 
 .accordion-panel {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-in-out, padding 0.35s ease-in-out;
-    padding: 0 15px;
-    background-color: #1671c7;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0 18px;
+    background-color: #125c9b;
     border-radius: 0 0 8px 8px;
     font-size: 14px;
-    margin-top: 5px;
-}
-
-.accordion-panel ul li, p{
-    color: white;
+    margin-top: 6px;
 }
 
 .accordion-panel.active {
-    max-height: 800px; /* We give a value large enough according to the content */
-    padding: 15px 15px;
-    overflow: hidden;
+    max-height: 900px;
+    padding: 16px 18px;
 }
 
-.icon {
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
-    vertical-align: middle;
+.accordion-panel ul li,
+.accordion-panel p {
+    color: #f1f1f1;
 }
 
 .profile-picture {
     display: block;
-    margin: 0 auto 20px auto;
-    width: 130px;
-    height: 130px;
+    margin: 0 auto 25px auto;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 3px solid #fff;
 }
 
 .edit-button {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    background-color: #004381;
-    color: white;
-    transition: background-color 0.3s;
+    top: 20px;
+    right: 20px;
+    background-color: #033a63;
+    color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-weight: bold;
+    padding: 9px 18px;
+    font-weight: 600;
     cursor: pointer;
-    border-radius: 10px;
-    z-index: 999;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    z-index: 10;
 }
 
 .edit-button:hover {
-    background-color: #1671c7;
+    background-color: #125c9b;
 }
 
-.main-content {
-    position: relative;
-}
-
-[contenteditable="true"] ul li, p{
+[contenteditable="true"] ul li,
+[contenteditable="true"] p {
     background-color: transparent !important;
     outline: none;
-    color: white !important;
+    color: #fff !important;
 }
-
-
