@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         contact: [
             { icon: "phone.png", text: "+994 50 611 51 32" },
             { icon: "email.png", text: "muradseferov7962@gmail.com" },
-            { icon: "location.png", text: "Azerbaijan/Baku/Yasamal" }
+            { icon: "location.png", text: "Azerbaijan/Baku/YasamalDİİİ BRATTT 7 Cİ ALATAVA QVARDİYA BİNASIII" }
         ],
         socialMedia: [
             { icon: "instagram.png", text: "mr.safarov705" },
