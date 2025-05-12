@@ -1,1 +1,1 @@
-# lab3
+# lab3 GPT İSTİFADƏ OLUNUB (YALANDI)
